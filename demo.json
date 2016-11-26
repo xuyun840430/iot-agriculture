@@ -1,0 +1,16 @@
+POST /sensor_data
+Content-Type: application/json
+
+{
+    "site":"1#连栋温室",
+    "timestamp": "2016-11-12T12:00:00+8:00",
+    "next_time": "2016-11-12T12:10:00+8:00",
+    "data": [
+        {"name":"土壤温度","value":23.1,"max":60.0,"min":0.0,"unit":"C","state":true},
+        {"name":"土壤湿度","value":12.2,"max":100.0,"min":0.0,"unit":"%RH","state":true},
+        {"name":"大气温度","value":25.0,"max":60.0,"min":0.0,"unit":"C","state":true},
+        {"name":"空气湿度","value":86.8,"max":100.0,"min":0.0,"unit":"%RH","state":true},
+        {"name":"光照强度","value":10365.0,"max":200000.0,"min":0.0,"unit":"lux","state":true},
+        {"name":"CO2浓度","value":418.0,"max":2000.0,"min":0.0,"unit":"ppm","state":true}
+    ]
+}
